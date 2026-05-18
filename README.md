@@ -13,7 +13,7 @@ tags:
 
 # Model Card for Model ID
 
-<!-- Provide a quick summary of what the model is/does. -->
+LGU-focused Filipino-Tagalog/English with RAG implementation
 
 
 
@@ -21,25 +21,23 @@ tags:
 
 ### Model Description
 
-<!-- Provide a longer summary of what this model is. -->
+This model is Filipino-Tagalog/English QLoRA SFT on [PLTAT's Filipino LoRA fine-tune](https://huggingface.co/PLTAT/Filipino_llama_3.1_FT_8B_GGUF). An adapter-on-adapter methodology was used, trained on manually-scraped Philippine public service-related data. This repository also features a notebook that includes the training dataset preprocessing pipeline and an RAG implemenatation. 
 
 
 
-- **Developed by:** [More Information Needed]
-- **Funded by [optional]:** [More Information Needed]
-- **Shared by [optional]:** [More Information Needed]
-- **Model type:** [More Information Needed]
-- **Language(s) (NLP):** [More Information Needed]
-- **License:** [More Information Needed]
-- **Finetuned from model [optional]:** [More Information Needed]
+- **Developed by:** Ajelmar Medina, Kirk Yendell Marcos, Francine Hernandez, Javin Amanda Beatrix Argueza
+- **Model type:** LoRA Fine-Tuned LLM
+- **Language(s) (NLP):** Filipino, Tagalog, English
+- **License:** Apache-2.0 license
+- **Finetuned from model:** [PLTAT/filipino_llama_3.1_FT_lora](https://huggingface.co/PLTAT/filipino_llama_3.1_FT_lora/)
 
-### Model Sources [optional]
+### Model Sources
 
 <!-- Provide the basic links for the model. -->
 
-- **Repository:** [More Information Needed]
-- **Paper [optional]:** [More Information Needed]
-- **Demo [optional]:** [More Information Needed]
+- **Repository:** https://github.com/ajelmarmedina/JEM_LGU-Filipino_English-Llama3_1-LoRA_FT-RAG
+- **Paper:** [More Information Needed]
+- **Demo:** [More Information Needed]
 
 ## Uses
 
@@ -152,9 +150,9 @@ Use the code below to get started with the model.
 
 Carbon emissions can be estimated using the [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute) presented in [Lacoste et al. (2019)](https://arxiv.org/abs/1910.09700).
 
-- **Hardware Type:** [More Information Needed]
-- **Hours used:** [More Information Needed]
-- **Cloud Provider:** [More Information Needed]
+- **Hardware Type:** T4 GPU (1x)
+- **Hours used:**: 0:31 Hours
+- **Cloud Provider:** Kaggle
 - **Compute Region:** [More Information Needed]
 - **Carbon Emitted:** [More Information Needed]
 
